@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'css/s.css' %}"/>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+    <script src="{% static 'js/code.js' %}"></script>
+  </head>
+<body>
+  <table>
+  <tr><td>Name:</td><td> <input type="text" name="name" id="name"/></td></tr>
+  <tr><td>Code:</td><td> <input type="text" name="code" id="code"/></td></tr>
+  </table>
+  <input id="submit" type="submit"/>
+
+  <table id="items">
+    <tr><td>name</td><td>code</td></tr>
+  </table>
+</body>
+</html>
